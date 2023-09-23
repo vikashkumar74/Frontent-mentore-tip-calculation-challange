@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+body {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-family: "Space Mono", monospace;
+}
+
+.logo {
+  margin-top: 5rem;
+}
+
+/* to removing increment-button */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* main section */
+.container {
+  width: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-radius: 13px;
+}
+
+/* section */
+/* leftbox  section*/
+.leftbox {
+  width: 47%;
+  padding: 0.5rem;
+}
+
+.inputbox {
+  position: relative;
+}
+
+.inputbox p {
+  margin-bottom: 2%;
+  font-size: 14px;
+  color: hsl(184, 14%, 56%);
+}
+
+.dollarimg {
+  position: absolute;
+  left: 7px;
+  top: 43px;
+  height: 13px;
+}
+
+.bill-input {
+  height: 2.5rem;
+  width: 97.5%;
+  padding: 0 4px;
+
+  text-align: right;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: hsl(185, 41%, 84%);
+  border: none;
+  border-radius: 7px;
+  outline: none;
+}
+
+.percentage-tips-box {
+  margin: 10% 0;
+  color: hsl(184, 14%, 56%);
+}
+
+.percentage-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 0.5rem;
+}
+
+.btn {
+  display: flex;
+  border-radius: 7px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 40px;
+  color: white;
+  background-color: hsl(183, 100%, 15%);
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  font-size: 19px;
+}
+
+#custom {
+  width: 96.5%;
+  outline: none;
+  height: 100%;
+  font-weight: bold;
+  text-align: right;
+  font-size: 19px;
+  border: none;
+  border-radius: 7px;
+  background-color: hsl(185, 41%, 84%);
+}
+
+.btn:hover {
+  background-color: hsl(185, 41%, 84%);
+  color: black;
+}
+
+.members {
+  height: 2.5rem;
+  width: 97.5%;
+  padding: 0 4px;
+
+  text-align: right;
+  font-weight: bolder;
+  font-size: 20px;
+  background-color: hsl(185, 41%, 84%);
+  border: none;
+  border-radius: 7px;
+  outline: none;
+}
+
+.message {
+  position: absolute;
+  top: 2px;
+  left: 60%;
+  color: red;
+  display: none;
+}
+
+/* rigtbox section */
+
+.rightbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 38%;
+  background-color: hsl(183, 100%, 15%);
+
+  padding: 2rem;
+  border-radius: 13px;
+}
+
+.tips-calc-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.amount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount h3 {
+  margin: 0%;
+  color: hsl(0, 0%, 100%);
+}
+
+.per-person {
+  color: hsl(186, 14%, 43%);
+}
+
+.tipsamount {
+  font-weight: bolder;
+  font-size: 30px;
+  align-items: baseline;
+  color: aqua;
+}
+
+.active {
+  background-color: hsl(185, 41%, 84%);
+}
+
+.reset-btn {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 7px;
+  border: none;
+  font-weight: bolder;
+  color: hsl(183, 100%, 15%);
+}
+
+@media (max-width: 974px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 755px) {
+  .container {
+    width: 95%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+  }
+
+  .leftbox {
+    width: 80%;
+    justify-content: center;
+  }
+
+  .rightbox {
+    margin-top: 5%;
+    width: 70%;
+    justify-content: space-between;
+    height: 16rem;
+  }
+
+  .percentage-box input {
+    padding-right: 5%;
+  }
+
+  .percentage-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #custom {
+    font-size: 14px;
+  }
+
+  .tipsamount {
+    font-size: 20px;
+  }
+}

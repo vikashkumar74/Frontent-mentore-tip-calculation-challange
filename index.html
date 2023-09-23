@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tip-calculator-app-main</title>
+    <link rel="stylesheet" href="style.css" />
+   <link rel="webpage icon" href="./images/favicon-32x32.png">
+  </head>
+  <body>
+    <div class="logo"><img src="./images/logo.svg" alt="" /></div>
+   
+    <div class="container">
+      <div class="leftbox">
+        <div class="billbox">
+          <div class="inputbox">
+            <p>Bill</p>
+            <img class="dollarimg" src="./images/icon-dollar.svg " alt="" />
+            <input class="bill-input" type="number" placeholder="0" />
+          </div>
+          <div class="percentage-tips-box">
+            <p>Select Tips %</p>
+            <div class="percentage-box">
+              <button class="btn" id="btn1" data-persentage="5">5%</button>
+              <button class="btn" id="btn2" data-persentage="10">10%</button>
+              <button class="btn" id="btn3" data-persentage="15">15%</button>
+              <button class="btn" id="btn4" data-persentage="25">25%</button>
+              <button class="btn" id="btn5" data-persentage="50">50%</button>
+              <div class="btn">
+                <input id="custom" type="number" placeholder="custom" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="inputbox">
+          <p>Number of people</p>
+          <img class="dollarimg" src="./images/icon-person.svg" alt="person" />
+          <span class="message">can't be zero</span>
+          <input
+            class="members"
+            type="number"
+            value="1"
+            placeholder="0"
+            onkeyup="message()"
+          />
+        </div>
+      </div>
+      <div class="rightbox">
+        <div class="tips-calc-box">
+          <div class="amount">
+            <div>
+              <h3>Tip Amount</h3>
+              <span class="per-person">/person</span>
+            </div>
+            <span class="tipsamount" id="PerMemberTip"> $0.00</span>
+          </div>
+          <div class="amount">
+            <div>
+              <h3>Total</h3>
+              <span class="per-person">/person</span>
+            </div>
+            <span class="tipsamount" id="PerMemberamount"> $0.00 </span>
+          </div>
+        </div>
+        <div class="">
+          <button class="reset-btn">RESET</button>
+        </div>
+      </div>
+    </div>
+<span> Challange by <a href="https://www.frontendmentor.io/home">Frontent mentore</a> coded by <a href="#">vikash kumar</a></span>
+    <script src="script.js"></script>
+  </body>
+</html>
