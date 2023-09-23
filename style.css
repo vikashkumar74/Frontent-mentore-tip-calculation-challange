@@ -234,4 +234,6 @@ input::-webkit-inner-spin-button {
   .tipsamount {
     font-size: 20px;
   }
+  .message{
+    left:40%;
 }
