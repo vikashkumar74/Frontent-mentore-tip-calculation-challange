@@ -1,1 +1,1 @@
-https://vikashkumar74.github.io/Forntent-mentore-tip-calculation-challange/
+https://vikashkumar74.github.io/Frontent-mentore-tip-calculation-challange/
